@@ -3,7 +3,7 @@
 FROM node:12.18.1
 
 ENV NODE_ENV=production
-WORKDIR /linka-defesas-functions
+WORKDIR /api
 COPY ["package.json", "package-lock.json*", "./"]
 RUN npm install --production
 COPY . .
